@@ -1,0 +1,137 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  color: black;
+  border-bottom: 1px solid #e0e0e0;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+.clickable-text {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar-left h1 {
+  margin: 0;
+  margin-right: 20px;
+}
+
+.navbar-options {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-options li {
+  margin: 0 15px;
+}
+
+.navbar-options a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 10px;
+}
+
+.login-buttonld,
+.signup-buttonld {
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.signup-buttonld {
+  background-color: #f1c40f;
+  border: none;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+/* ✅ Profile Icon Styling */
+.profile-icon {
+  color: red;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+  color: #f0a500;
+}
+
+/* ✅ Logout Button Styling */
+.logout-button {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.logout-button:hover {
+  background-color:  #f0a500;
+}
+
+/* ✅ Navbar Links Styling */
+.navbar-options li {
+  display: inline-block;
+  margin: 0 15px;
+  position: relative;
+  transition: transform 0.2s ease-in-out; /* Subtle Pop-up Effect */
+}
+
+.navbar-options li a {
+  text-decoration: none;
+  color: black;
+  /* font-weight: bold; */
+  padding-bottom: 5px;
+  transition: color 0.3s ease-in-out;
+}
+
+/* ✅ Hover Effects */
+.navbar-options li:hover {
+  transform: scale(1.05); /* Slight Pop-up Effect */
+}
+
+.navbar-options li a:hover {
+  color:rgb(16, 11, 2); /* Change Color on Hover */
+ }
+
+/* ✅ Underline Effect */
+.navbar-options li::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -3px;
+  width: 0%;
+  height: 3px;
+  background-color: #f0a500;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-options li:hover::after {
+  width: 100%; /* Full Underline on Hover */
+}
+
+

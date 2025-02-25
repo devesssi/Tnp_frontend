@@ -1,0 +1,170 @@
+.stats-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.stats-header {
+  color: black;
+  padding: 20px 160px;
+  text-align: start;
+}
+
+.stats-hero-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.stats-hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  opacity: 0.9;
+}
+
+.stats-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 160px;
+}
+
+.stats-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  
+}
+
+.stats-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 200px;
+  transition: transform 0.3s ease;
+  display: grid;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+}
+
+.stats-card-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.stats-card-header h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #333;
+}
+
+.stats-card-icon {
+  font-size: 1.5rem;
+  color: #4CAF50;
+}
+
+.stats-card-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #212121;
+}
+
+.stats-card-increment {
+  font-size: 0.9rem;
+  color: #4CAF50;
+  margin-top: 5px;
+}
+
+
+@media (max-width: 768px) {
+  .stats-cards {
+    justify-content: center;
+  }
+  
+  .stats-card {
+    width: calc(50% - 20px);
+    min-width: 220px;
+  }
+}
+.big-divs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 160px;
+}
+
+.big-div {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  width: 48%;
+  text-align: left;
+}
+
+.big-div-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.big-div-subtitle {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.community-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.community-name {
+  font-weight: bold;
+  display: inline-block;
+  width: 70%;
+}
+
+.community-stats {
+  display: inline-block;
+  width: 30%;
+  text-align: right;
+  color: #4CAF50; 
+}
+
+.community-members {
+  color: #666;
+  font-size: 0.9em;
+}
+@media (max-width: 768px) {
+  .big-divs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .statsCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .statsCard {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .stats-card {
+    width: 100%;
+  }
+  
+  .stats-hero-title {
+    font-size: 2rem;
+  }
+}

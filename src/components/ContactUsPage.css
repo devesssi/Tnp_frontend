@@ -1,0 +1,137 @@
+.contact-us-page {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contact-title {
+    font-size: 2.5em;
+    color: #333333;
+  }
+  
+  .contact-subtitle {
+    font-size: 1.2em;
+    color: #666666;
+    margin-top: 10px;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .contact-info {
+    flex: 1;
+    margin-right: 20px;
+    text-align: start;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5em;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 1.2em;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form-container {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  .contact-button {
+    padding: 15px 30px;
+    background-color: #f1c40f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+  .contact-button:hover {
+    background-color: #d4a00c;
+  }
+  
+  .map-container {
+    margin-top: 40px;
+    border-radius: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .contact-us-page {
+      padding: 20px;
+    }
+  
+    .contact-header {
+      margin-bottom: 20px;
+    }
+  
+    .contact-title {
+      font-size: 2em;
+    }
+  
+    .contact-subtitle {
+      font-size: 1em;
+    }
+  
+    .contact-content {
+      flex-direction: column;
+    }
+  
+    .contact-info,
+    .contact-form-container {
+      margin: 0;
+    }
+  
+    .contact-info {
+        text-align: start;
+      margin-bottom: 20px;
+    }
+  
+    .map-container {
+      margin-top: 20px;
+    }
+  }
+  
